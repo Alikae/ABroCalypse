@@ -1,0 +1,20 @@
+MVP:
+	1 Biome
+	1 recruit mechanic
+	1 ennemy
+	1 boss
+	1 quest
+	Character:
+		Money
+		Friends
+	1 Chest - 3 upgrades
+	
+	Gameplay:
+		Zero attack
+		Molesters attack you you can only flee
+		Find archer friend in a cage
+		Take his key quest
+		Find Key and free him
+		Hes your friend
+		Find the boss kill him
+		You win
