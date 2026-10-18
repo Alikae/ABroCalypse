@@ -1,12 +1,11 @@
 MVP:
-	1 Biome
-	1 recruit mechanic
-	1 ennemy
-	1 boss
-	1 quest
 	Character:
 		Money
 		Friends
+	1 Biome
+	1 ennemy
+	1 boss
+	1 quest
 	1 Chest - 3 upgrades
 	
 	Gameplay:
