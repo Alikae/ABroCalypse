@@ -11,8 +11,13 @@ config_version=5
 [application]
 
 config/name="ABroCalypse"
+run/main_scene="uid://cfodx7ofrqtyt"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+GLOBAL="*uid://dxibh4no2oskt"
 
 [display]
 
@@ -54,4 +59,5 @@ Right={
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"

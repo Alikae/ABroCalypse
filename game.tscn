@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://cfodx7ofrqtyt"]
+
+[ext_resource type="PackedScene" uid="uid://crvo8i6kgr4s4" path="res://Livings/Player/player.tscn" id="1_e2o6t"]
+[ext_resource type="Script" uid="uid://dibvg5ffqdfpc" path="res://game.gd" id="1_fc0e3"]
+[ext_resource type="Script" uid="uid://c48ytdvocpyvy" path="res://Livings/Player/player_camera.gd" id="2_feb5d"]
+[ext_resource type="PackedScene" uid="uid://d33mt6tsmabob" path="res://Biomes/base_forest.tscn" id="3_feb5d"]
+[ext_resource type="PackedScene" uid="uid://bipl1kihrrvj8" path="res://Livings/Ennemies/spit_slime.tscn" id="4_7jktm"]
+
+[node name="Game" type="Node" unique_id=21385908]
+script = ExtResource("1_fc0e3")
+
+[node name="Livings" type="Node" parent="." unique_id=1575810086]
+
+[node name="Player" parent="Livings" unique_id=1711722838 instance=ExtResource("1_e2o6t")]
+position = Vector2(580, 285)
+
+[node name="PlayerCamera" type="Camera2D" parent="Livings/Player" unique_id=70933495]
+script = ExtResource("2_feb5d")
+
+[node name="SpitSlime" parent="Livings" unique_id=316068575 instance=ExtResource("4_7jktm")]
+
+[node name="Projectiles" type="Node" parent="." unique_id=281411022]
+
+[node name="BaseForest" parent="." unique_id=991427370 instance=ExtResource("3_feb5d")]

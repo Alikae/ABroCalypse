@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://jl7sp0t0382h"]
+
+[ext_resource type="Texture2D" uid="uid://c3epdwbypuei8" path="res://Assets/spit.png" id="1_fdm7r"]
+[ext_resource type="Script" uid="uid://com5n0qmh02qi" path="res://Weapons/Projectiles/spit_projectile.gd" id="1_ii57t"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ffxhp"]
+radius = 4.0
+
+[node name="SpitProjectile" type="Area2D" unique_id=375475872]
+collision_layer = 0
+collision_mask = 3
+script = ExtResource("1_ii57t")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1892416360]
+shape = SubResource("CircleShape2D_ffxhp")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1554850501]
+position = Vector2(0, 1)
+texture = ExtResource("1_fdm7r")

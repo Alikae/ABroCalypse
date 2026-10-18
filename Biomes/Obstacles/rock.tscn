@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://dy45lmln04vdj"]
+
+[ext_resource type="Texture2D" uid="uid://c0f2n76j0gddw" path="res://Assets/brock.png" id="1_fvgfv"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ffxhp"]
+
+[node name="Tree" type="StaticBody2D" unique_id=2129100084]
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=559300694]
+shape = SubResource("CircleShape2D_ffxhp")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=487707722]
+position = Vector2(0, -5)
+texture = ExtResource("1_fvgfv")
