@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://bao37llrsb1ec"]
+
+[ext_resource type="Texture2D" uid="uid://ckx3bw0h3jstm" path="res://Assets/archer.png" id="1_j61rw"]
+[ext_resource type="Script" uid="uid://c6ckixyost5vc" path="res://Livings/Friends/archer.gd" id="1_qoho8"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qoho8"]
+radius = 13.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ffxhp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_j61rw")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ffxhp"]
+radius = 227.0
+
+[node name="Archer" type="CharacterBody2D" unique_id=334156531]
+collision_layer = 8
+collision_mask = 15
+script = ExtResource("1_qoho8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=852484712]
+shape = SubResource("CircleShape2D_qoho8")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1268415106]
+position = Vector2(-1, -5)
+sprite_frames = SubResource("SpriteFrames_ffxhp")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1607435149]
+collision_layer = 0
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=800550922]
+shape = SubResource("CircleShape2D_ffxhp")

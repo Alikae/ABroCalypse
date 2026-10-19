@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://dc5kmuq6pep52"]
+
+[ext_resource type="Script" uid="uid://cwslhukawh85v" path="res://Livings/Ennemies/gigaslime.gd" id="1_prq85"]
+[ext_resource type="Texture2D" uid="uid://tcvqfc1pi5f6" path="res://Assets/gigaslime.png" id="2_prq85"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qllj6"]
+radius = 11.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6utrc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_prq85")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Gigaslime" type="CharacterBody2D" unique_id=316068575]
+collision_layer = 4
+collision_mask = 7
+script = ExtResource("1_prq85")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1474159129]
+shape = SubResource("CircleShape2D_qllj6")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1826439525]
+position = Vector2(0, -4)
+sprite_frames = SubResource("SpriteFrames_6utrc")

@@ -21,8 +21,7 @@ func ai(delta: float)-> Vector2:
 
 func primary_shoot(direction: Vector2)-> void:
 	var spit = preload("res://Weapons/Projectiles/spit_projectile.tscn").instantiate()
-	GLOBAL.game.add_projectile(spit)
-	spit.global_position = global_position
+	GLOBAL.game.add_projectile(spit, global_position)
 	spit.init(direction)
 
 func secondary_shoot(_direction: Vector2)-> void:

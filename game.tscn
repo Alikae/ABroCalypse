@@ -5,11 +5,17 @@
 [ext_resource type="Script" uid="uid://c48ytdvocpyvy" path="res://Livings/Player/player_camera.gd" id="2_feb5d"]
 [ext_resource type="PackedScene" uid="uid://d33mt6tsmabob" path="res://Biomes/base_forest.tscn" id="3_feb5d"]
 [ext_resource type="PackedScene" uid="uid://bipl1kihrrvj8" path="res://Livings/Ennemies/spit_slime.tscn" id="4_7jktm"]
+[ext_resource type="PackedScene" uid="uid://dc5kmuq6pep52" path="res://Livings/Ennemies/gigaslime.tscn" id="6_ryrav"]
 
 [node name="Game" type="Node" unique_id=21385908]
 script = ExtResource("1_fc0e3")
 
+[node name="InteractionSpots" type="Node" parent="." unique_id=1391281954]
+
 [node name="Livings" type="Node" parent="." unique_id=1575810086]
+
+[node name="Gigaslime" parent="Livings" unique_id=630399338 instance=ExtResource("6_ryrav")]
+position = Vector2(83, 131)
 
 [node name="Player" parent="Livings" unique_id=1711722838 instance=ExtResource("1_e2o6t")]
 position = Vector2(580, 285)

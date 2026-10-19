@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://b85ktmn2v11jh"]
+
+[ext_resource type="Script" uid="uid://ef4wd7bvdv0w" path="res://Weapons/Projectiles/arrow.gd" id="1_50rkq"]
+[ext_resource type="Texture2D" uid="uid://beb7jswq3plq5" path="res://Assets/archer_arrow.png" id="1_b6c83"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ffxhp"]
+radius = 5.0
+height = 22.0
+
+[node name="Arrow" type="Area2D" unique_id=500281774]
+collision_layer = 0
+collision_mask = 4
+script = ExtResource("1_50rkq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=899608431]
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_ffxhp")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1172991026]
+position = Vector2(-1, 0)
+texture = ExtResource("1_b6c83")

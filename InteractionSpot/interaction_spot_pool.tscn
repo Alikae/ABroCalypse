@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://duqpj00tgjvyf"]
+
+[ext_resource type="Script" uid="uid://himekjuw1vya" path="res://interaction_spot_pool.gd" id="1_x03rm"]
+
+[node name="InteractionSpotPool" type="Node2D" unique_id=372073852]
+script = ExtResource("1_x03rm")

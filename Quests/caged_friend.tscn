@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://c7gph4jqco7nd"]
+
+[ext_resource type="Script" uid="uid://ba0us54p7imnd" path="res://Quests/caged_friend.gd" id="1_10gki"]
+[ext_resource type="Texture2D" uid="uid://cd1ns11m80t52" path="res://Assets/caged_friend.png" id="1_voqgo"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qssmf"]
+radius = 5.0
+height = 26.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ffxhp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_voqgo")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ffxhp"]
+radius = 16.0
+height = 44.0
+
+[node name="CagedFriend" type="StaticBody2D" unique_id=721395322]
+script = ExtResource("1_10gki")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=682985547]
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_qssmf")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1295497519]
+position = Vector2(-1, -10)
+sprite_frames = SubResource("SpriteFrames_ffxhp")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=854971629]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1463210448]
+position = Vector2(0, -4)
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_ffxhp")

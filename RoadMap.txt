@@ -12,41 +12,41 @@
 #		Trees
 #		Rocks
 
-SpitSlime:
-	AI
-	Atk
+#SpitSlime:
+#	AI
+#	Atk
 
-GigaSlime:
-	AI
-	atk
+#GigaSlime:
+#	AI
+#	atk
 
-Interaction Spot:
-	Being picked
-	Effect
+#Interaction Spot:
+#	Being picked
+#	Effect
 
-Quest:
-	Caged friend sprite
-	Interaction Spot give quest
-	Interaction Spot Key follow
-	Interaction Spot open cage, friend join you
+#Chest:
+#	Interaction Pool w/ 3 upgrades from your team pool
 
-Friend:
-	Invincible
-	AI
-	Atk
+#Quest:
+#	Caged friend sprite
+#	Interaction Spot give quest
+#	Interaction Spot Key follow
+#	Interaction Spot open cage, friend join you
+
+#Friend:
+#	Invincible
+#	AI
+#	Atk
 
 Upgrade:
 	Livings have upgradePool
 	Upgrades are Linked to a specific character
-	Character Speed
+#	Character Speed
 	Atk Speed
 	Projectile count
 	...
-	When take upgrade, apply it instantly
+#	When take upgrade, apply it instantly
 
-Interaction Pool:
-	3 Interaction Spots
-	Take one make other disappear
-
-Chest:
-	Interaction Pool w/ 3 upgrades from your team pool
+#Interaction Pool:
+#	3 Interaction Spots
+#	Take one make other disappear
